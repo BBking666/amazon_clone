@@ -14,7 +14,8 @@ a {
     text-decoration: none;
     color: inherit;
 }
-input{
+
+input {
     border: none;
     outline: none;
     margin: 0;
@@ -23,6 +24,7 @@ input{
     appearance: none;
     border-radius: 0;
 }
+
 nav {
     display: flex;
     align-items: center;
@@ -30,6 +32,7 @@ nav {
     background: #131921;
     padding: 10px 20px;
     color: #fff;
+    min-width: 1090px;
 }
 
 .logo-link {
@@ -58,12 +61,14 @@ nav {
     }
 }
 
-.nav-search{
+.nav-search {
     min-width: 200px;
     background: blue;
     display: flex;
+    flex: 1;
     align-items: center;
-    .nav-search-category{
+
+    .nav-search-category {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -72,33 +77,76 @@ nav {
         background: #e5e5e5;
         border-radius: 3px 0 0 3px;
         color: #606060;
-        p{
+
+        p {
             font-size: 13px;
             margin-right: 10px;
         }
     }
-    .nav-search-input{
-        height: 38px;
 
+    .nav-search-input {
+        height: 38px;
+        background: #fff;
+        min-width: 103px;
+        width: 100%;
+    }
+
+    .nav-search-icon-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f5bf77;
+        width: 50px;
+        height: 38px;
+        border-radius: 0 3px 3px 0;
     }
 }
 
-// .nav-search {
-//     flex: 1;
-//     display: flex;
-//     align-items: center;
-//     background: #fff;
-//     color: gray;
-//     min-width: 1000px;
-//     border-radius: 4px;
-//     margin-left: 15px;
-// }
+.nav-language {
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.nav-search-gategory {
+    p {
+        margin: 0 5px;
+    }
+}
+
+.nav-account {
+    margin-left: 20px;
+
+    p {
+        font-size: 13px;
+    }
+
+    .nav-account-icon {
+        display: flex;
+        align-items: center;
+
+        p {
+            margin-right: 6px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+    }
+}
+.nav-returns{
+    margin-left: 20px;
+    p{
+        font-size: 13px;
+    }
+    h6{
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+.nav-Basket{
     display: flex;
     align-items: center;
-    padding: 10px 20px;
-    gap: 5px;
-    background: #e5e5e5;
-    border-radius: 4px 0 0 4px;
+    margin-left: 25px;
+    p{
+        font-size: 15px;
+        font-weight: 600;
+    }
 }
