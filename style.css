@@ -310,3 +310,23 @@ nav {
         /* 滑块圆角 */
     }
 }
+
+.products-slider-with-price {
+    background: #fff;
+    margin: 0 30px;
+    padding: 20px;
+
+    .products {
+        display: flex;
+        overflow-X: hidden;
+
+        .product-card {
+            margin: 20px;
+
+            img {
+                max-width: 220px;
+            }
+
+        }
+    }
+}
