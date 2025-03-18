@@ -315,10 +315,15 @@ nav {
     background: #fff;
     margin: 0 30px;
     padding: 20px;
+    padding-bottom: 10px;
+
+    h2 {
+        font-size: 20px;
+    }
 
     .products {
         display: flex;
-        overflow-X: hidden;
+        overflow-X: auto;
 
         .product-card {
             margin: 20px;
@@ -327,6 +332,86 @@ nav {
                 max-width: 220px;
             }
 
+            .product-offer {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 12px;
+
+                .red-box {
+                    padding: 5px;
+                    border-radius: 6%;
+                    color: #fefdfd;
+                    background: #bb2b3e;
+                }
+
+                .red-words {
+                    color: #bb2b3e;
+                    font-weight: 600;
+                }
+            }
+
+            .product-price {
+                display: flex;
+                gap: 2px;
+                margin-top: 5px;
+
+                .dollar {
+                    font-size: 11px;
+                }
+
+                .number {
+                    font-size: 18px;
+                    margin-top: -3px;
+                }
+
+                .decimal {
+                    font-size: 11px;
+                }
+
+                .RRP {
+                    margin-left: 5px;
+                    font-size: 13px;
+                    color: #575959;
+                }
+
+                .RRP-price {
+                    font-size: 13px;
+                    text-decoration: line-through;
+                    color: #575959;
+                }
+            }
+
+            .product-intro {
+                margin-top: 5px;
+                font-size: 12px;
+                width: 200px;
+                /* 设置宽度 */
+                white-space: nowrap;
+                /* 禁止换行 */
+                overflow: hidden;
+                /* 隐藏溢出部分 */
+                text-overflow: ellipsis;
+                /* 显示省略号 */
+            }
         }
+    }
+    .products::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.products-slider-with-price:hover {
+    .products::-webkit-scrollbar {
+        display: block;
+        width: 8px;
+        height: 8px;
+    }
+
+    .products::-webkit-scrollbar-thumb {
+        background: #c4c4c4;
+        /* 滚动条滑块颜色 */
+        border-radius: 4px;
+        /* 滑块圆角 */
     }
 }
